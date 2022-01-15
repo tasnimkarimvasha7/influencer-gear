@@ -2,19 +2,22 @@
 
 
 nav{
-    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
     margin-bottom: 100px;
-    justify-content:space-around;
+  
 }
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
    
-
 }
-/* design for influencer */
-.hov{
-    font-size: 30px;
+h1{
+    font-size: 40px;
+}
+.container{
+    width: 960px;
+    margin-bottom: 50px;
 }
 .influencer{
     margin-bottom: 10%;
@@ -26,25 +29,30 @@ body{
    
 }
 
-.navi{
-    list-style: none;
-    text-decoration: none;
-}
-.influencer{
+.influencers{
     display: flex;
+    align-items: center;
 }
 .line-influ{
     width: 50%;
-    padding-left: 10%;
+    padding-right: 20%;
+    padding-left: 5%;
     
+}
+.logo img{
+    align-items: center;
+    padding-left: 70px;
+
 }
 .cam img{
-    width: 85%;
-    padding-left: 10%;
+    width: 90%;
+    padding-left: 10px;
     position: right;
-   
-    
-}
+    transition: width 4s;
+   }
+   .cam img:hover{
+    width: 400px;
+   }
 button{
     background-color: rgb(216, 11, 161);
     border: none;
@@ -59,6 +67,7 @@ button{
   }
   hr{
     border:3x solid black;
+    margin-top: 30px;
    
     
   }
@@ -102,16 +111,16 @@ button{
 .fa-star.filled{
     color: #FFC014
 }
-button.right{
-    position: left;
-margin-left: 60px;
-background-color: none;
 
-
-
+.text-button{
+    text-decoration: none;
+    color:rgb(216, 11, 161) ;
+    float: right;
+    
 }
 .ong{
     color: rgb(7, 99, 179);
+    display: block;
 }
 .thought{
     margin-top: 50px;
@@ -121,40 +130,42 @@ background-color: none;
     text-align: center;
     color: white;
     background-color:rgb(1, 1, 45);
+    padding-top: 5px;
 }
-.fab-fa{
-    justify-content: space-around;
-}
-@media only screen and (max-width:688px) {
-    .container{
-        width: 100%;
-    }
-    .collections{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .collection{
-        flex-direction: column;
-    }
-}
-@media only screen and (min-width: 576px){
 
- .container {
+@media only screen and (max-width:576px) {
+    .container{
         width: 100%;
     }
     .collections, .influencers{
         grid-template-columns: repeat(1, 1fr);
     }
-    .collection, .influencer{
+    .influencers{
         flex-direction: column;
     }
-     }
-    @media only screen and (min-width: 577px) and (max-width:768px) {
-        .container{
-            width: 100%;
-        }
-        .collections{
-            grid-template-columns: repeat(2, 1fr);
-        }
-       
 }
+@media only screen and (min-width:577px ) and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    .collections{
     
+        grid-template-columns: repeat(2, 1fr);
+    
+}
+.collection .influencers{
+    flex-direction: column;
+}
+}
+@media only screen and (min-width:769px ) and (max-width:1400px){
+    .container{
+        width: 100%;
+    }
+    .collections{
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.collection{
+    flex-direction: column;
+}
+}
