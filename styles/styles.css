@@ -48,7 +48,7 @@ h1{
     width: 90%;
     padding-left: 10px;
     position: right;
-    transition: width 4s;
+    transition: width 3s;
    }
    .cam img:hover{
     width: 400px;
@@ -110,13 +110,7 @@ button{
 }
 .fa-star.filled{
     color: #FFC014
-}
-
-/* .text-button{
-    text-decoration: none;
-    color:rgb(216, 11, 161) ;
-    float: right;
-} */
+} 
     
 
 .ong{
