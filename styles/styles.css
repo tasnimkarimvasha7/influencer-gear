@@ -3,7 +3,7 @@
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -42,15 +42,18 @@ body{
 }
 .cam{
     width: 60%;
-    height: 90px;
-    padding-left: 70px;
+    height: 30px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     
 }
 button{
     background-color: rgb(216, 11, 161);
     border: none;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 10px;
     color: white;
 }
@@ -105,6 +108,10 @@ button{
 background-color: none;
 text-align: left;
 
+
+}
+.ong{
+    color: rgb(7, 99, 179);
 }
 .thought{
     margin-top: 50px;
@@ -117,28 +124,4 @@ text-align: left;
 }
 .fab-fa{
     justify-content: space-around;
-}
-@media only screen and (max-width:688px) {
-    .influencer{
-        width: 100%;
-    }
-    .info-line, .container, .thought{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .info-line, .container, .thought{
-        flex-direction: column;
-    }
-}
-
-/* tablet devices */
-@media only screen and (min-width: 688px) and (max-width:992px) {
-    .container{
-        width: 100%;
-    }
-    .players, .courses{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .blogs{
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
