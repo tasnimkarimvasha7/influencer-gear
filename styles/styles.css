@@ -112,18 +112,22 @@ button{
     color: #FFC014
 }
 
-.text-button{
+/* .text-button{
     text-decoration: none;
     color:rgb(216, 11, 161) ;
     float: right;
+} */
     
-}
+
 .ong{
     color: rgb(7, 99, 179);
     display: block;
 }
 .thought{
     margin-top: 50px;
+}
+.text-button{
+    float: right;
 }
 .foot{
     width:100%;
